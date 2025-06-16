@@ -11,88 +11,137 @@
     </head>
 
     <body>
-        <h1>Hello World!</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#introduction">Intro</a>
-                </li>
-                <li>
-                    <a href="#plans">Plans</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-        <section id="introduction">
-            <h2>I'm ready for HTML.</h2>
-            <p>This is my first web page.</p>
-
-            <h3>I'm Nobady.</h3>
-            <p>Yeah....
-                <br>&nbsp;&nbsp;&nbsp;...I am here.
-                <br>&nbsp;&nbsp;&nbsp;...Moving on to the next step.
-                <br>&nbsp;&nbsp;&nbsp;...I will be a <abbr title="Whatever...">
-                    <a href="https://www.google.com/search?q=whatever">web developer</a>
-                </abbr>.
-            </p>
-        </section>
-        <hr>
-        <section id="plans">
-            <h2>I am planning to <em>go to a walk</em>.</h2>
-            <p>Music will be nice with it.</p>
-
-            <!-- Music is Important-->
-            <h3>What music?</h3>
-            <p><em>The ones</em> I like...<strong>Yeah....</strong></p>
-            <ul>
-                <li>
-                    <p>I've heard good things about:</p>
-                    <address>
-                        Margaritaville Island Reserve Riviera Cancún<br>
-                        Bahia Petempich Puerto Morelos, Mexico<br>
-                        Colonia Morelos, México 77580
-                    </address>
-                </li>
-            </ul>
-
-            <h3>PLaes to avoid</h3>
-            <!--Description tag use-->
-            <dl>
-                <dt>North Pole</dt>
-                <dd>I hear this is <strong>cold</strong>!</dd>
-
-                <dt>South Pole</dt>
-                <dd>This is aloso cold.</dd>
-
-                <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-            </dl>
-        </section>
-        <hr>
-        <section id="lists">
-            <h3>Lists</h3>
-            <p>Something.... Order & Unorder</p>
-                <ol>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ol>
-                
+        <header>
+            <h1>Hello World!</h1>
+            <nav aria-label="primary-navigation">
                 <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
+                    <li>
+                        <a href="#introduction">Intro</a>
+                    </li>
+                    <li>
+                        <a href="#plans">Plans</a>
+                    </li>
                 </ul>
-        </section>
+            </nav>
+        </header>
+
         <hr>
 
-        &lt;&lt;&lt; &copy; <a href="about.html">Shadow</a> &gt;&gt;&gt;
+        <main>
+            <article id="introduction">
+                <h2>I'm ready for HTML.</h2>
+                <p>This is my first web page.</p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+                    <figure>
+                        <figcaption>An Example of HTML5 code</figcaption>
+                        <p>
+                            <code>
+                                &lt;h1&gt;Hello World!&lt;/h1&gt;
+                            </code>
+                        </p>
+                    </figure>
+                </section>
+                <section>
+                    <h3>I'm Nobody.</h3>
+                    <p>Yeah....
+                        <br>&nbsp;&nbsp;&nbsp;...I am here.
+                        <br>&nbsp;&nbsp;&nbsp;...Moving on to the next step.
+                        <br>&nbsp;&nbsp;&nbsp;...I will be a <abbr title="Whatever...">
+                            <a href="https://www.google.com/search?q=whatever">web developer</a>
+                        </abbr>.
+                    </p>
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark>number of hours</mark> I code?</summary>
+                            <p>I do for sometime... more and more...</p>
+                        </details>
+                    </aside>
+                </section>
+            </article>
 
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
+            <hr>
+
+            <article id="plans">
+                <h2>I am planning to <em>go to a walk</em>.</h2>
+                <p>Music will be nice with it.</p>
+
+                <!-- Music is Important-->
+                <h3>What music?</h3>
+                <p><em>The ones</em> I like...<strong>Yeah....</strong></p>
+
+                <section>
+                    <h3>Places</h3>
+                    <ul>
+                        <li>
+                            <p>I've heard things about Caribbean.</p>
+                            <figure>
+                                <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean Beach" width="400" height="225" loading="lazy">
+                                <figcaption>
+                                    Caribbean Beach Gateaway
+                                </figcaption>
+                            </figure>
+                            <p>I've heard good things about:</p>
+                            <address>
+                                Margaritaville Island Reserve Riviera Cancún<br>
+                                Bahia Petempich Puerto Morelos, Mexico<br>
+                                Colonia Morelos, México 77580
+                            </address>
+                            <figure>
+                                <img src="img/vacation.jpg" alt="Cancun Vaction" title="It's 5 o'Clock Somewhere!" loading="lazy" width="400" height="267">
+                                <figcaption>
+                                    A Caribbean Vacation Image
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>PLaes to avoid</h3>
+                    <!--Description tag use-->
+                    <dl>
+                        <dt>North Pole</dt>
+                        <dd>I hear this is <strong>cold</strong>!</dd>
+
+                        <dt>South Pole</dt>
+                        <dd>This is aloso cold.</dd>
+
+                        <dt>Mountain Tops</dt>
+                        <dd>These are also cold.</dd>
+                    </dl>
+                </section>
+            </article>
+
+            <hr>
+
+            <section id="lists">
+                <h3>Lists</h3>
+                <p>Something.... Order & Unorder</p>
+                    <ol>
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ol>
+                    
+                    <ul>
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ul>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Shadow</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
     </body>
 
 </html>
